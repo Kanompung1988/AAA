@@ -1,15 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "ประกาศผลสอบ A-Level TCAS69 - mytcas.com" },
-      {
-        name: "description",
-        content: "หน้ารายละเอียดผลสอบ A-Level TCAS69 พร้อมคะแนนรายวิชาทั้ง 9 วิชา",
-      },
-    ],
-  }),
   component: Index,
 });
 
@@ -309,7 +300,7 @@ function Index() {
           </svg>
 
           <img
-            src="/tcas69-logo.svg"
+            src="https://student.mytcas.com/assets/img/logo.svg"
             alt="mytcas.com TCAS69"
             style={{ margin: "0 auto", width: "clamp(140px, 50vw, 200px)", height: "auto", display: "block" }}
           />
