@@ -4,37 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@font-face {
-  font-family: "tt";
-  src: url("/font/tt-reg.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "tt";
-  src: url("/font/tt-bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "kvl";
-  src: url("/font/kvl-reg.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "kvl";
-  src: url("/font/kvl-bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback;
-}
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
 
 /*
  * Design system definition.
@@ -51,8 +21,8 @@
  */
 
 @theme inline {
-  --font-sans: "tt", sans-serif;
-  --font-serif: "kvl", sans-serif;
+  --font-sans: "Prompt", sans-serif;
+  --font-serif: "Prompt", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -203,7 +173,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #191e23;
-    font-family: "tt", sans-serif;
+    font-family: "Prompt", sans-serif;
   }
 
   @media (min-width: 640px) {
